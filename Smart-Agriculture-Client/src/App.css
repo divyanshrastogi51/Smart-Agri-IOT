@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Roboto');
+* {
+  font-family: 'Roboto','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  width: 100wh;
+  height: 90vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #EE7752, rgb(75, 31, 48), rgb(31, 62, 73), rgb(110, 7, 105));
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  color: white;
+}
+
+.App-logo {
+  height: 80px;
+  transition: filter 0.5s, color 0.5s;
+}
+
+.App-logo:hover {
+  color: black;
+  filter: drop-shadow(0px 0px 10px #ffffff);
+  /*  Offset x, y, blur spread, color */
+}
+/*  HEADER */
+.App-header {
+  background-color: #00000050;
+  height: 90px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row-wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-slug {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-left: 1em;
+  line-height: .5;
+}
+
+.App-title {
+  font-size: 2.5em;
+  font-weight: 100;
+  padding-left: .5em;
+  font-family: 'Monoton', 'Helvetica', 'san-serif'
+}
+
+
+/* STATION INFO CARD */
+
+.station-info {
+  margin: 10px;
+  background-color: #00000050;
+  width: auto;
+  padding-bottom: 10px;
+}
+
+#root>div>div.station-info>h2 {
+  margin-bottom: 0;
+}
+
+.station-info>div>p>span {
+  padding: 0.75rem;
+  margin: 0.2rem;
+  border: #ffffffa9 solid 2px;
+  border-radius: 15px;
+  transition: filter 0.5s;
+}
+span:hover {
+  filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+.station-info>div>p {
+  margin: 1rem;
+}
+
+ .wu {
+   height: 25px;
+ }
+
+.live {
+  color: #b0ff92;
+  border: #b0ff92 solid 2px !important;
+  padding: 0.75rem;
+  border-radius: 15px;
+}
+
+.off {
+  color: #ff9292;
+  border: #ff7878 solid 2px !important;
+  padding: 0.75rem;
+  border-radius: 15px;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+/* FOOTER CARD */
+
+.card ul li, ul li {
+  list-style-type: none;
+  padding-left: 1em;
+}
+
+.cards ul li, .cards a, li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s, filter 0.5s;
+}
+
+.cards ul li:hover, .cards a:hover,li a:hover {
+  color:black;
+  width: auto;
+  border-radius: 15px;
+  filter: drop-shadow(0px 0px 10px #ffffff);
+}
+.cards {
+  display: flex !important;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00000050 ;
+  padding: 1rem;
+  margin: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ffffff70;
+  text-decoration: none;
+  max-width: 350px;
+  text-align:left !important;
+  }
+
+.card-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 1.2em;
+}
+.card-meta {
+  max-height: 0;
+  font-size: .78em;
+  text-transform: uppercase;
+  padding: 0 5%;
+}
+
+.charts{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin:40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
